@@ -23,10 +23,10 @@ function validar(){
             
             resultados.innerHTML=`
             <div class="container-agenda-resultados-mostrar">
-                <h3>${recorro.nombre}</h3>
-                <h3>${recorro.apellido}</h3>
-                <h3>${recorro.gustos}</h3>
-                <h3>${recorro.numero}</h3>
+                <h3>Nombre: ${recorro.nombre}</h3>
+                <h3>Apellido: ${recorro.apellido}</h3>
+                <h3>Gustos: ${recorro.gustos}</h3>
+                <h3>Número: ${recorro.numero}</h3>
             </div>
             `
             foto_perfil.setAttribute("src",recorro.foto)
@@ -34,10 +34,10 @@ function validar(){
             
             resultados.innerHTML=`
             <div class="container-agenda-resultados-mostrar">
-                <h3>${recorro.nombre}</h3>
-                <h3>${recorro.apellido}</h3>
-                <h3>${recorro.gustos}</h3>
-                <h3>${recorro.numero}</h3>
+                <h3>Nombre: ${recorro.nombre}</h3>
+                <h3>Apellido: ${recorro.apellido}</h3>
+                <h3>Gustos: ${recorro.gustos}</h3>
+                <h3>Número: ${recorro.numero}</h3>
             </div>
             `
             foto_perfil.setAttribute("src",recorro.foto)
@@ -45,10 +45,21 @@ function validar(){
             
             resultados.innerHTML=`
             <div class="container-agenda-resultados-mostrar">
-                <h3>${recorro.nombre}</h3>
-                <h3>${recorro.apellido}</h3>
-                <h3>${recorro.gustos}</h3>
-                <h3>${recorro.numero}</h3>
+                <h3>Nombre: ${recorro.nombre}</h3>
+                <h3>Apellido: ${recorro.apellido}</h3>
+                <h3>Gustos: ${recorro.gustos}</h3>
+                <h3>Número: ${recorro.numero}</h3>
+            </div>
+            `
+            foto_perfil.setAttribute("src",recorro.foto)
+        }else if(recorro.apellido===nombre.value && criterio.value==='apellido' ){
+            
+            resultados.innerHTML=`
+            <div class="container-agenda-resultados-mostrar">
+                <h3>Nombre: ${recorro.nombre}</h3>
+                <h3>Apellido: ${recorro.apellido}</h3>
+                <h3>Gustos: ${recorro.gustos}</h3>
+                <h3>Número: ${recorro.numero}</h3>
             </div>
             `
             foto_perfil.setAttribute("src",recorro.foto)
