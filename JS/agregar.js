@@ -3,6 +3,7 @@ const foto=document.getElementById('foto')
 const nombre=document.getElementById('nombre')
 const gusto=document.getElementById('gusto')
 const numero=document.getElementById('numero')
+const apellido=document.getElementById('apellido')
 let original = JSON.parse(localStorage.getItem("objects"));
 
 let valor_foto=0;
@@ -18,9 +19,11 @@ function mostrar_(){
 function agregando(){
     let nuevoArreglo=[{
         nombre:nombre.value,
+        apellido:apellido.value,
         numero:numero.value,
-        gusto:gusto.value,
+        gustos:gusto.value,
         foto:foto.value
+        
     }]
     if(nombre.value==='' && numero.value==='' && gusto.value==='' && foto.value===''){
         alert('debes completar todos los datos')
