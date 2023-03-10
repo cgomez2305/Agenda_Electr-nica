@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script defer src="./JS/objetos.js"></script>
+    <script defer src="./JS/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-perfiles" id="mostrar_imagenes">
+            
+        </div>
+        
+        <div class="container-agenda">
+            <div class="container-titulo">
+                <h1>Buscar contactos</h1>
+            </div>
+            <div class="container-agenda-division">
+                <div class="container-agenda-division-datos">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                    <label for="criterio">Criterio</label>
+                    <select id="criterio">
+                        <option value="nombre">Nombre</option>
+                        <option value="numero" >Numero</option>
+                        <option value="gusto">Gusto</option>
+                    </select>
+                    
+                    <div class="container-agenda-division-datos-botones">
+                        <button onclick="validar()">Buscar</button>
+                        <a target="_blank" href="./HTML/agregar.html"><button>Agregar</button></a>
+                    </div>
+                </div>
+                <div class="container-agenda-division-foto">
+                    <img id="foto_perfil" src="https://cdn-icons-png.flaticon.com/512/7007/7007092.png" alt="">
+                </div>
+            </div>
+            <div class="container-agenda-resultados" id="resultados">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
