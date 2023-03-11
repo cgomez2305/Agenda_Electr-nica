@@ -1,4 +1,4 @@
-let contactos=[
+let contactos = [
     {
         nombre: "Ronald",
         apellido: "Rojas",
@@ -50,14 +50,15 @@ let contactos=[
         foto:'https://img.europapress.es/fotoweb/fotonoticia_20161211123933_420.jpg'
     },
 ]
-let llegando =0;
-function recibimos(){
-    llegando=JSON.parse(localStorage.getItem("agregamos"));
-}
 
 function llamar(){
-    recibimos()
-    localStorage.setItem('objects', JSON.stringify(llegando));
+    let llegando=JSON.parse(localStorage.getItem("agregamos"));
+    if (llegando) {
+        localStorage.setItem('objects', JSON.stringify(llegando));
+    } else {
+        localStorage.setItem('objects', JSON.stringify(contactos));
+    }
 }
 
 llamar()
+
