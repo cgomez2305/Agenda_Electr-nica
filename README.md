@@ -1,6 +1,6 @@
 # Electronic Address Book
 
-This repository contains an electronic address book built using HTML, CSS, and JS with object manipulation and local storage functionality. The application allows users to add, delete, and edit contacts, and stores the contact information locally in the browser.
+This repository contains an electronic address book built using HTML, CSS, and JS with object manipulation and local storage functionality. The application allows users to add, and stores the contact information locally in the browser.
 
 ## How to use the application
 
