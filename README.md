@@ -8,8 +8,6 @@ The application includes two buttons: one to add a new contact and another to se
 
 The contact information is automatically saved to the browser's local storage, allowing it to be accessed even after closing the application or browser.
 
-To delete or edit a contact, click the corresponding buttons in the contact's row. Editing a contact allows users to modify the contact's name, last name, phone number, and interests, and also allows them to add a new profile picture.
-
 To search for a contact, click the "Search" button and enter the name of the desired contact. The application will display the contact's information if it exists in the local storage.
 
 ## Predefined Contacts
@@ -35,4 +33,4 @@ If you would like to contribute to the application, you can do so by:
 
 ## Credits
 
-This application was created by [your name here].
+This application was created by Carlos Gomez.
