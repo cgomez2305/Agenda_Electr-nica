@@ -1,41 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Heebo', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
 }
 .container{
     width: 100%;
     height: 100vh;
-    display: grid;
-    justify-items: center;
-    align-items: start;
-    background-color: rgb(164, 164, 164);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  linear-gradient(90deg, rgb(32, 130, 141) 0%, hsla(188, 78%, 69%, 1) 100%);
+    padding-bottom: 50px;
 }
 .container-perfiles{
     width: 100%;
-    height: 130px;
+    height: 20%;
     display: flex; 
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    background-color: white;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.259);
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #275171;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.082);
+    padding: 10px;
+    overflow-x: scroll;
 }
-.container-perfiles-img img{
-    width: 100px;
+
+.container-perfiles img{
+    width: 120px;
+    border-radius: 5px;
+    height: 100%;
+    transition: transform .3s;
 }
+.container-perfiles img:hover{
+    box-shadow: 0px 5px 20px 2px rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
 .container-agenda{
+    margin-top: 20px;
     width: 50%;
-    height: 600px;
-    border-radius: 20px;
+    height: 80%;
+    border-radius: 10px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.421);
-    background-color: white;
-    display: grid;
-    padding: 20px;
+    background-color: #122537;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    color: white;
 }
+
 .container-titulo{
     width: 100%;
     display: flex;
@@ -45,15 +63,18 @@
 }
 .container-agenda-division{
     display: flex;
-    height: 300px;
-    background-color: black;
-    border-radius: 10px;
+    height: 80%;
+    background-color: #3a85b4;
+    border-radius: 5px;
 }
 .container-agenda-division-datos{
     width: 50%;
     height:100%;
-
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     padding: 30px;
     justify-items: center;
     align-items: center;
@@ -73,14 +94,15 @@
     font-size: 18px;
 }
 .container-agenda-division-datos label{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    font-weight: 700;
 }
 
 .container-agenda-division-foto{
     width: 50%;
     height: 100%;
-    border-left:  solid white 2px ;
+    border-left:  solid #3a85b4 2px ;
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -91,12 +113,13 @@
     border-radius: 10px;
 }
 .container-agenda-resultados{
-    border: solid 1px black;
-    height: 120px;
-    background-color: black;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #3a85b4;
+    border-radius: 5px;
     color: white;
-    
+    display: flex;
+    align-items: center;
 }
 .container-agenda-division-datos-botones{
     padding-top: 10px;
@@ -109,40 +132,50 @@ button {
     justify-content: center;
     outline: none;
     cursor: pointer;
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
     border-radius: 30px;
     border: 1px solid #8F9092;
-    transition: all 0.2s ease;
-    font-family: "Source Sans Pro", sans-serif;
+    transition: transform .3s;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     color: black;
     font-size: 18px;
     text-shadow: 0 1px #fff;
     }
   
-button:hover {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-}
-  
-button:active {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-}
-  
-button:focus {
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-}
 
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 25px 0px white ;
+}
 .container-agenda-resultados-mostrar{
     overflow: scroll;
-    padding-left: 20px;
+    
 }
 .container-agenda-resultados-mostrar h3{
     color: white;
 }
 
-::-webkit-scrollbar {
+.container-perfiles::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.container-perfiles::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
     display: none;
+} 
+
+.container-perfiles::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.container-perfiles::-webkit-scrollbar-thumb {
+    background-color:#3a85b4;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.container-perfiles::-webkit-scrollbar-track {
+    border-radius: 20px;  
 }

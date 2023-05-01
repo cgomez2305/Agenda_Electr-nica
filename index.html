@@ -18,32 +18,31 @@
         
         <div class="container-agenda">
             <div class="container-titulo">
-                <h1>Buscar contactos</h1>
+                <h1>Search Contacts</h1>
             </div>
             <div class="container-agenda-division">
                 <div class="container-agenda-division-datos">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Value</label>
                     <input type="text" id="nombre">
-                    <label for="criterio">Criterio</label>
+                    <label for="criterio">Options</label>
                     <select id="criterio">
-                        <option value="nombre">Nombre</option>
-                        <option value="numero" >Numero</option>
-                        <option value="gusto">Gusto</option>
-                        <option value="apellido">Apellido</option>
+                        <option value="nombre">Name</option>
+                        <option value="numero" >Phone Number</option>
+                        <option value="gusto">Hobbies</option>
+                        <option value="apellido">Last Name</option>
                     </select>
                     
                     <div class="container-agenda-division-datos-botones">
-                        <button onclick="validar()">Buscar</button>
-                        <a target="_blank" href="./HTML/agregar.html"><button>Agregar</button></a>
+                        <button onclick="validar()">Search</button>
+                        <a href="./HTML/agregar.html"><button>Agregar</button></a>
                     </div>
                 </div>
                 <div class="container-agenda-division-foto">
                     <img id="foto_perfil" src="https://cdn-icons-png.flaticon.com/512/7007/7007092.png" alt="">
                 </div>
             </div>
-            <div class="container-agenda-resultados" id="resultados">
-                
-            </div>
+            <h2>Results</h2>
+            <div class="container-agenda-resultados" id="resultados"></div>
         </div>
     </div>
 </body>

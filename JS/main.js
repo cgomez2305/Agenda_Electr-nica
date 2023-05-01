@@ -9,9 +9,7 @@ let array = JSON.parse(localStorage.getItem("objects"));
 function agregarImagenes(){
     array.forEach(element=> {
         imagenes.innerHTML+=`
-        <div class="container-perfiles-img">
            <img src=${element.foto} alt="">
-        </div>
          `
     });
 }
