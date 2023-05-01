@@ -120,6 +120,7 @@
     color: white;
     display: flex;
     align-items: center;
+    padding-left: 40px;
 }
 .container-agenda-division-datos-botones{
     padding-top: 10px;
@@ -150,11 +151,11 @@ button:hover{
     transform: scale(1.1);
     box-shadow: 0px 5px 25px 0px white ;
 }
-.container-agenda-resultados-mostrar{
+.container-perfiles-resultados-mostrar{
     overflow: scroll;
     
 }
-.container-agenda-resultados-mostrar h3{
+.container-perfiles-resultados-mostrar h3{
     color: white;
 }
 
